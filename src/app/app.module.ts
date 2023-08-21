@@ -10,6 +10,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { StoreModule } from '@ngrx/store';
+import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent, CountriesListComponent, HeaderComponent],
@@ -21,6 +25,10 @@ import { MatMenuModule } from '@angular/material/menu';
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
+    HttpClientModule,
+    StoreModule.forRoot({}, {}),
+    MatCardModule,
+    NgOptimizedImage,
   ],
   providers: [],
   bootstrap: [AppComponent],

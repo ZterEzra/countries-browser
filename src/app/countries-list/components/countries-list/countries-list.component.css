@@ -1,0 +1,9 @@
+.example-card {
+  min-width: 300px;
+  cursor: pointer;
+}
+
+.flag-container {
+  height: 100px;
+  width: 200px;
+}

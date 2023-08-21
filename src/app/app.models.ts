@@ -8,4 +8,5 @@ export interface CountryList {
     common: string;
     official: string;
   };
+  region: string;
 }

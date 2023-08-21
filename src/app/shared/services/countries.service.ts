@@ -7,7 +7,8 @@ import { CountryList } from '../../app.models';
 })
 export class CountriesService {
   countriesList$ = this.http.get<CountryList[]>(
-    `https://restcountries.com/v3.1/all?fields=name,flags`
+    `https://restcountries.com/v3.1/all?fields=name,region,flags`
   );
+
   constructor(private http: HttpClient) {}
 }
